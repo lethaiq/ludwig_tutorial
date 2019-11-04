@@ -9,12 +9,12 @@ Please always first refer to ```User Guide``` of Ludwig from ```https://uber.git
 
 ## Clickbait Detection
 
-#### Create new Google Collab
+### Create new Google Collab
 - Go to your Google Drive
 - Access Google Collab at: https://colab.research.google.com. Click "New Python3 Notebook", the browser will show the interface of a iPython Notebook
 - Add GPU: Click menu "Edit" -> "Notebook Settings". In the dialog box, select "GPU" from drop box "Hardware Acceleration"
 
-#### Making sure GPU is loaded:
+### Making sure GPU is loaded:
 
 ```
 import tensorflow as tf
@@ -24,36 +24,36 @@ if device_name != '/device:GPU:0':
 print('Found GPU at: {}'.format(device_name))
 ```
 
-####Install ludwig: 
+###Install ludwig: 
 
 ```!apt-get install libgmp-dev libmpfr-dev libmpc-dev```  
 ```!pip install ludwig --no-deps tensorflow```
 
-####Import libraries:
+###Import libraries:
 
 ```import pandas as pd```  
 ```import numpy as np```  
 ```from google.colab import drive```  
 	
-####Mount Google Drive folder to the python environment:
+###Mount Google Drive folder to the python environment:
 ```drive.mount('/gdrive')```  
 
 Click the authorization link provided, follow the instruction to get the authorization code. Copy the authorization code back to the Google Collab notebook and press enter. Now it should show: **Mounted at /gdrive**
 
 	
-####Access the ludwig_exercise folder:
+###Access the ludwig_exercise folder:
 ```%cd /gdrive/My Drive/ludwig_exercise```
 ```%ls```  
 
 Making sure you can see four files: ```clickbait.csv```,  ```config.yaml```, ```quora_test.csv```, ```quora_train.csv``` show up
 
-####Load clickbait dataset:
+###Load clickbait dataset:
 ```df = pd.read_csv('clickbait.csv', index_col=0)```  
 
-####Examine the dataset:
+###Examine the dataset:
 ```df.head()```
 
-####Print out some statistics:
+###Print out some statistics:
 ```print("total data samples:{}".format(df.shape[0]))```  
 ```print("label distribution:{}".format(np.bincount(df['class'])))```
 	
