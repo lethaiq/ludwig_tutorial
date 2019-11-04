@@ -45,7 +45,7 @@ Click the authorization link provided, follow the instruction to get the authori
 ```%cd /gdrive/My Drive/ludwig_exercise```
 ```%ls```  
 
-Making sure you can see four files: ```clickbait.csv```,  ```config.yaml```, ```quora_test.csv```, ```quora_train.csv``` show up
+Making sure you can see files: ```clickbait.csv```,  ```config.yaml``` show up
 
 ###Load clickbait dataset:
 ```df = pd.read_csv('clickbait.csv', index_col=0)```  
@@ -74,7 +74,7 @@ If at any point in the the Google Collab shows error, you can reset the running 
 ## Exercise
 
 ### Sentence Similarity
-```quora dataset```: in the ```ludwig_exercise``` folder, I have also prepared two datasets: ```quora_train.csv``` and ```quora_test.csv```. Details of this task can be found at: ```https://www.kaggle.com/c/quora-question-pairs```. Please use the train dataset to train a model to predict question pairs similiarity, and report on test set.
+```quora dataset```: I have also prepared two datasets: ```quora_train.csv``` and ```quora_test.csv``` from this link: ```https://drive.google.com/drive/folders/1VyX0Tf5UZ3SzWEE8wYiMztRbZWavttaq?usp=sharing```. Details of this task can be found at: ```https://www.kaggle.com/c/quora-question-pairs```. Please use the train dataset to train a model to predict question pairs similiarity, and report on test set.
 
 Hint 1: ```Siamese architecture``` at ```https://uber.github.io/ludwig/examples/#one-shot-learning-with-siamese-networks``` is one example of neural network model that can be used. In this example they want to predict similarity between a pair of images, we need to change the architecture accordingly to accommodate our task.
 
