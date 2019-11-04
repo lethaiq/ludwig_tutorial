@@ -31,9 +31,11 @@ print('Found GPU at: {}'.format(device_name))
 
 ### Import libraries:
 
-```import pandas as pd```  
-```import numpy as np```  
-```from google.colab import drive```  
+```
+import pandas as pd
+import numpy as np
+from google.colab import drive
+```  
 	
 ### Mount Google Drive folder to the python environment:
 ```drive.mount('/gdrive')```  
@@ -42,8 +44,9 @@ Click the authorization link provided, follow the instruction to get the authori
 
 	
 ### Access the ludwig_exercise folder:
-```%cd /gdrive/My Drive/ludwig_exercise```
-```%ls```  
+```
+%cd /gdrive/My Drive/ludwig_exercise```
+%ls```  
 
 Making sure you can see files: ```clickbait.csv```,  ```config.yaml``` show up
 
@@ -54,8 +57,10 @@ Making sure you can see files: ```clickbait.csv```,  ```config.yaml``` show up
 ```df.head()```
 
 ### Print out some statistics:
-```print("total data samples:{}".format(df.shape[0]))```  
-```print("label distribution:{}".format(np.bincount(df['class'])))```
+```
+print("total data samples:{}".format(df.shape[0]))
+print("label distribution:{}".format(np.bincount(df['class'])))
+```
 	
 ### Run training using ludwig:
 Now we want to command ludwig to do training experiment on the clickbait dataset ```clickbait.csv``` with a deep learning architecture described in ```config.yaml```  
@@ -86,6 +91,6 @@ Hint 3: try pre-trained word-embedding such as glove or word2vec with ```pretrai
 
 Hint 4: try different training parameters (batch-size, learning rate, etc.)
 
-### What you can do with Ludwig?
+## What you can do with Ludwig?
 Check out examples shown on the ludwig official website: ```https://uber.github.io/ludwig/examples/```
 
