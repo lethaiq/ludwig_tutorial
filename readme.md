@@ -58,6 +58,8 @@ Making sure you can see files: ```clickbait.csv```,  ```config.yaml``` show up
 ```print("label distribution:{}".format(np.bincount(df['class'])))```
 	
 ### Run training using ludwig:
+Now we want to command ludwig to do training experiment on the clickbait dataset ```clickbait.csv``` with a deep learning architecture described in ```config.yaml```  
+
 ```
 !ludwig experiment \
   --data_csv 'clickbait.csv' \
