@@ -4,7 +4,7 @@ Please always first refer to ```User Guide``` of Ludwig from ```https://uber.git
 ## Preparation
   
 - Create a new folder called: ```ludwig_exercise``` in your Google Drive.  
-- Download zip file: ```ludwig_exercise.zip``` to your computer, unzip it, and upload all of the files in to the ```ludwig_exercise``` folder created in the previous step.  
+- Download zip file: ```clickbait.csv``` and ```config.yaml``` in to the ```ludwig_exercise``` folder created in the previous step.  
 - Make sure you have at least 1GB free space in your Google Drive
 
 ## Clickbait Detection
@@ -84,4 +84,3 @@ Hint 3: try pre-trained word-embedding such as glove or word2vec with ```pretrai
 
 Hint 4: try different training parameters (batch-size, learning rate, etc.)
 
-# ludwig_tutorial
