@@ -26,8 +26,10 @@ print('Found GPU at: {}'.format(device_name))
 
 ### Install ludwig: 
 
-```!apt-get install libgmp-dev libmpfr-dev libmpc-dev```  
-```!pip install ludwig --no-deps tensorflow```
+```
+!apt-get install libgmp-dev libmpfr-dev libmpc-dev
+!pip install ludwig --no-deps tensorflow
+```
 
 ### Import libraries:
 
