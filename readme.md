@@ -86,3 +86,6 @@ Hint 3: try pre-trained word-embedding such as glove or word2vec with ```pretrai
 
 Hint 4: try different training parameters (batch-size, learning rate, etc.)
 
+### What you can do with Ludwig?
+Check out examples shown on the ludwig official website: ```https://uber.github.io/ludwig/examples/```
+
