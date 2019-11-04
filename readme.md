@@ -48,7 +48,8 @@ Click the authorization link provided, follow the instruction to get the authori
 ### Access the ludwig_exercise folder:
 ```
 %cd /gdrive/My Drive/ludwig_exercise
-%ls```  
+%ls
+```  
 
 Making sure you can see files: ```clickbait.csv```,  ```config.yaml``` show up
 
